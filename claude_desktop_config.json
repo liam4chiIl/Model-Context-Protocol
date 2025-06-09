@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/VOTRE_NOM/Documents/VOTRE_DOSSIER"
+      ]
+    },
+    "ubuntu-server": {
+      "command": "ssh",
+      "args": [
+        "user@192.168.1.100",
+        "~/mcp-server/start-mcp.sh"
+      ]
+    }
+  }
+}
