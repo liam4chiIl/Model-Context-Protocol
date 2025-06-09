@@ -132,7 +132,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       content: [
         {
           type: 'text',
-          text: `🎉 Bonjour ${nom} ! Message envoyé depuis le serveur Ubuntu distant`,
+          text: ` Bonjour ${nom} ! Message envoyé depuis le serveur Ubuntu distant`,
         },
       ],
     };
@@ -143,7 +143,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       content: [
         {
           type: 'text',
-          text: `📊 Serveur MCP Ubuntu\n• Status: Actif ✅\n• Protocol: MCP via SSH\n• Outils disponibles: 2`,
+          text: ` Serveur MCP Ubuntu\n• Status: Actif ✅\n• Protocol: MCP via SSH\n• Outils disponibles: 2`,
         },
       ],
     };
@@ -175,7 +175,7 @@ chmod +x start-mcp.sh
 
 ---
 
-## 🔐 Étape 3 : Configuration SSH depuis macOS
+## Étape 3 : Configuration SSH depuis macOS
 
 ### Génération de clés SSH (si nécessaire)
 
@@ -251,7 +251,7 @@ Configuration complète :
 
 ---
 
-## 🚀 Étape 5 : Démarrage et test
+## Étape 5 : Démarrage et test
 
 ### Lancement du serveur sur la VM
 
