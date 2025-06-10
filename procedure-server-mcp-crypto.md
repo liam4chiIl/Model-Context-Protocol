@@ -277,6 +277,31 @@ Recherche "Polygon"
 | `fetch is not defined` | Import manquant | Vérifier `import fetch from 'node-fetch'` |
 | Serveur ne répond pas | Process mort | `ps aux \| grep node` puis relancer |
 
+Si Claude affiche un message d'erreur alors éxécuter cette commande pour rétablir votre package.json :
+
+```
+cat > package.json << 'EOF'
+{
+  "name": "mcp-crypto-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "crypto-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "node-fetch": "^3.3.2"
+  }
+}
+EOF
+```
+
+
 ## Logs utiles
 
 ```bash
