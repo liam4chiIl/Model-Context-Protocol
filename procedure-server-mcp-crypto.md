@@ -1,4 +1,4 @@
-# Serveur MCP Crypto - Procédure OneShot
+# Serveur MCP Crypto
 
 ## Prérequis
 
