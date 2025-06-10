@@ -2,18 +2,11 @@
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/Users/VOTRE_NOM/Documents/VOTRE_DOSSIER"
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/Documents/MCP"]
     },
-    "ubuntu-server": {
-      "command": "ssh",
-      "args": [
-        "user@192.168.1.100",
-        "~/mcp-server/start-mcp.sh"
-      ]
+    "crypto-server": {
+      "command": "ssh", 
+      "args": ["-o", "ConnectTimeout=5", "user@IP_DE_LA_VM", "~/mcp-crypto-server/start-crypto.sh"]
     }
   }
 }
